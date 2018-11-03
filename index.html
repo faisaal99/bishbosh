@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Bish Bosh</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="icon2.png" />
+</head>
+<body onload="start()">
+    
+
+    <div id="title">
+
+        <img src="titleBackground.png" id="t_bgr" />
+
+        <h1>BISH BOSH</h1>
+
+        <!--<p>DESCRIPTION</p>-->
+    
+    </div>
+
+    <p>Max Nummer: </p>
+
+    <input id="i_range" type="range" min="1" max="40" value="3" oninput="range()" />
+
+    <p id="range"></p>
+
+    
+
+    <script>
+
+        function start() {
+            
+            document.getElementById("range").innerHTML = document.getElementById("i_range").value;
+        }
+
+
+        function range() {
+            document.getElementById("range").innerHTML = document.getElementById("i_range").value;
+        }
+
+    </script>
+</body>
+</html>
